@@ -21,3 +21,15 @@
 
 - [Codecademy Full-Stack Engineer by Code(a)cademy](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path) | <progress id="file" max="100" value="27"> 27% </progress>
 - [JavaScript/Front-end by RS School](https://rs.school/js) | <progress id="file" max="100" value="0"> 0% </progress>
+
+### A code snippet as an example
+
+```JavaScript
+/*
+A function that always returns 5
+without using any of the following
+characters: "0123456789*+-/"
+*/
+
+const unusualFive = () => 'fives'.length;
+```
