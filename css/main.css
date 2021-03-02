@@ -1,3 +1,53 @@
 body {
+  width: 1180px;
+  border: 5px solid black;
   margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  color: green;
+}
+
+/* visited link */
+
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+
+a:hover {
+  color: red;
+}
+
+/* selected link */
+
+a:active {
+  color: yellow;
+}
+
+figure {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+}
+
+/* round cv profile image */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+img:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+figcaption {
+  text-align: center;
+  border: 1px solid rgb(0, 0, 0);
 }
