@@ -1,53 +1,106 @@
 body {
+  padding: 0;
+  background-color: #222831;
   width: 1180px;
-  border: 5px solid black;
-  margin: 0 auto;
+  /*border: 5px solid white;*/
+  margin: 20px auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  position: fixed;
+  margin: 0 auto;
+  height: 270px;
+  width: 1150px;
+  margin: 5px 5px;
+  border: 1px solid white;
+  background-color: #393e46;
+  border-radius: 30px;
+}
+
+h1.job-title {
+  position: relative;
+  top: -50%;
+  left: 20%;
+  padding: 0px 10px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-style: oblique;
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+}
+
+h1.job-title:hover {
+  box-shadow: inset 5em 5em #00adb5;
+}
+
+h1.name-surname {
+  position: relative;
+  right: 14.3%;
+  bottom: 60px;
+  display: inline-block;
+  margin-left: 0px;
+  padding: 0px 10px;
+  color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+}
+
+h1.name-surname:hover {
+  box-shadow: inset 5em 5em #00adb5;
 }
 
 /* unvisited link */
 a:link {
-  color: green;
+  color: #eeeeee;
 }
 
 /* visited link */
 
 a:visited {
-  color: green;
+  color: #eeeeee;
 }
 
 /* mouse over link */
 
 a:hover {
-  color: red;
+  color: #eeeeee;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 /* selected link */
 
 a:active {
-  color: yellow;
+  color: #00adb5;
 }
 
 figure {
-  width: 150px;
+  display: inline-block;
+  top: -210px;
   height: auto;
-  border: 1px solid black;
+  /*border: 1px solid white;*/
+  margin: 50px 0px 50px 50px;
 }
 
 /* round cv profile image */
 img {
-  display: block;
+  display: inline-block;
+  object-fit: cover;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid rgb(0, 0, 0);
   border-radius: 50%;
+  width: 150px;
 }
 
 img:hover {
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  box-shadow: 0 0 0 5px #00adb5;
 }
 
 figcaption {
+  display: block;
+  width: 150px;
+  margin: 0 auto;
   text-align: center;
-  border: 1px solid rgb(0, 0, 0);
 }
