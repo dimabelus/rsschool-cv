@@ -6,13 +6,33 @@ body {
 }
 
 h1,
+h2,
 p {
   color: white;
   padding: 0px 10px;
 }
 
+ul li {
+  color: white;
+}
+
+#comment {
+  display: inline-block;
+  background-color: black;
+  margin: 0 10px;
+  background-color: white;
+  color: green;
+}
+ul li a:hover {
+  text-decoration: underline;
+}
+
+code {
+  display: inline-block;
+  color: black;
+}
+
 header {
-  display: block;
   position: sticky;
   margin: 10px auto;
   border: 1px solid white;
