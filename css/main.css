@@ -1,102 +1,68 @@
+/* content is centered through
+margin property */
 body {
-  background-color: #222831;
-  width: 1100px;
+  display: block;
+  width: 980px;
   margin: 20px auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  background-color: #222831;
 }
 
+/* horizontal padding is set
+to 10px for a better
+visual experiece */
 h1,
 h2,
 p {
-  color: white;
   padding: 0px 10px;
 }
 
-ul li {
-  color: white;
+/* unvisited link */
+a:link {
+  color: #eee;
+  text-decoration: none;
 }
 
-#comment {
-  display: inline-block;
-  background-color: black;
-  margin: 0 10px;
-  background-color: white;
-  color: green;
-}
-ul li a:hover {
-  text-decoration: underline;
+/* visited link */
+a:visited {
+  color: #eee;
 }
 
-code {
-  display: inline-block;
-  color: black;
-}
-
+/* header section */
 header {
-  position: sticky;
   margin: 10px auto;
   border: 1px solid white;
   background-color: #364f6b;
   border-radius: 30px;
 }
 
-main {
+/* container for profile photo */
+header figure {
+  display: inline-block;
+}
+
+/* profile photo */
+header figure img {
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* mouse over profile photo */
+header figure img:hover {
+  box-shadow: 0 0 0 5px #00adb5;
+}
+
+/* photo description with github link */
+header figure figcaption {
   display: block;
-  position: static;
-  margin: 10px auto;
-  border: 1px solid white;
-  background-color: #364f6b;
-  border-radius: 30px;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-footer {
-  display: block;
-  position: static;
-  border: 1px solid white;
-  background-color: #364f6b;
-  border-radius: 30px;
-}
-
-footer time {
-  position: relative;
-  display: inline-block;
-  margin: 5px 10px;
-  color: #eeeeee;
-}
-
-.figure-footer {
-  display: inline-block;
-  padding-left: 10px;
-  margin: 0 10px;
-}
-
-.figure-footer img {
-  position: relative;
-  display: inline-block;
-  height: 20px;
-  top: 3px;
-}
-
-.figure-footer img:hover {
-  box-shadow: none;
-}
-
-.figure-footer figcaption {
-  display: inline-block;
-}
-
-.figure-footer figcaption a:hover {
-  color: #eeeeee;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-#youtube-logo {
-  height: 15px;
-  padding: 0;
-  top: 1px;
-}
-
+/* job title and name section */
 #name-job {
   position: relative;
   bottom: 60px;
@@ -104,91 +70,131 @@ footer time {
   margin-right: 30px;
 }
 
-#contact-details {
-  display: inline-block;
-  position: relative;
-  bottom: 40px;
-  left: 120px;
-}
-
-#contact-details h2 {
-  color: white;
-}
-
-#contact-details ul li {
-  list-style-type: none;
-}
-
+/* job title */
 h1.job-title {
-  padding: 0px 10px;
   display: block;
+  padding: 0px 10px;
   text-transform: uppercase;
   font-style: oblique;
-  color: #eeeeee;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   border-radius: 30px;
 }
 
+/* job title on mouse over */
 h1.job-title:hover {
   box-shadow: inset 5em 5em #00adb5;
 }
 
+/* name section */
 h1.name-surname {
   display: inline-block;
   padding: 0px 10px;
-  color: #eeeeee;
-  border: 1px solid #eeeeee;
+  border: 1px solid #eee;
   border-radius: 30px;
 }
 
+/* name section on mouse over */
 h1.name-surname:hover {
   box-shadow: inset 5em 5em #00adb5;
 }
 
-/* unvisited link */
-a:link {
-  color: #eeeeee;
-  text-decoration: none;
-}
-
-/* visited link */
-
-a:visited {
-  color: #eeeeee;
-}
-
-/* mouse over link */
-
-header a:hover {
-  color: #eeeeee;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* selected link */
-
-a:active {
-  color: #00adb5;
-}
-
-header figure {
+/* contact details */
+#contact-details {
+  position: relative;
+  bottom: 40px;
+  left: 100px;
   display: inline-block;
 }
 
-/* round cv profile image */
-header figure img {
-  object-fit: cover;
-  border-radius: 50%;
-  width: 150px;
+/* show off unordered
+list's bullets  */
+#contact-details ul li {
+  list-style-type: none;
 }
 
-header figure img:hover {
-  box-shadow: 0 0 0 5px #00adb5;
+/* mouse over link in header section */
+header a:hover {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-header figure figcaption {
+/* main section */
+main {
   display: block;
-  width: 150px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 10px auto;
+  background-color: #364f6b;
+  border: 1px solid #eee;
+  border-radius: 30px;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+/* code instance field */
+#comment {
+  display: inline-block;
+  margin: 0 10px;
+  background-color: #eee;
+  color: green;
+}
+
+code {
+  display: inline-block;
+  color: black;
+}
+
+/* footer section */
+footer {
+  display: block;
+  border: 1px solid #eee;
+  background-color: #364f6b;
+  border-radius: 30px;
+}
+
+/* container for github,
+rsschool photos*/
+.figure-footer {
+  display: inline-block;
+  padding-left: 10px;
+  margin: 0 10px;
+}
+
+/* github, rsschool photos */
+.figure-footer img {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  height: 20px;
+}
+
+/* github, rsschool photos
+on mouse over */
+.figure-footer img:hover {
+  box-shadow: none;
+}
+
+/* photo description with link */
+.figure-footer figcaption {
+  display: inline-block;
+}
+
+/* photo description with link
+on mouse over*/
+.figure-footer figcaption a:hover {
+  text-decoration: underline;
+}
+
+/* youtube logo */
+#youtube-logo {
+  top: 1px;
+  height: 15px;
+  padding: 0;
+}
+
+/* time element */
+footer time {
+  position: relative;
+  display: inline-block;
+  margin: 5px 10px;
 }
